@@ -1,17 +1,17 @@
 #!/usr/bin/python
 
-import unittest
+
 
 def getResponse(path, params=None):
     import json
     import urllib, urllib2
-    # param = {'ajax': '1', 'htd': '20131111', 'pn': 'p1', 'htv': 'l'}
     value = urllib.urlencode(params) if params is not None else None
-    # value = "ajax=1&htd=20131111&pn=p1&htv=l"
     req = urllib2.Request('https://o3f323b5k0.execute-api.us-east-1.amazonaws.com/dev/' + path, value)
     
     return json.load( urllib2.urlopen(req) )
 
+
+import unittest
 # Create your tests here.
 class TestServer(unittest.TestCase):
     def setUp(self):
