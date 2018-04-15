@@ -696,3 +696,24 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
 }
+
+#content {
+  height: 100vh;
+  width: 70vh;
+}
+
+#savedStatus {
+  width: 100%;
+}
+
+#saveTime {
+  float: left;
+}
+
+#saveBtn {
+  float: right;
+}
+
+#landing {
+  display : none;
+}
